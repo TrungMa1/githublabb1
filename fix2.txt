@@ -72,3 +72,11 @@ git commit -m "Update fix2"
 
 git checkout main
 git merge --no-ff feature3 -m "Merge feature3 and Update fix2"
+
+git pull
+-fixade några conflicts i fix2.txt
+git add fix2.txt
+git commit -m "final commit"
+git push
+
+-la till git config gpgkey i slutet
