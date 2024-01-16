@@ -47,3 +47,28 @@ git cherry-pick 60107eb7 = (fix2.txt)
 -la till all commands som har använts tills nu
 git add fix2.txt
 git commit -m "Add commands into fix2"
+
+git remote add origin https://github.com/TrungMa1/githublabb1.git
+git push -u origin --all
+git push --tags
+
+-skapade en ny fil med namnet .gitignore och la till instruktioner
+.jar, out/, target/, !/*.html
+git add .gitignore
+git commit -m "Add .gitignore"
+git push
+
+git tag -a v1.0 -m "Version 1.0"
+git push --tags
+
+git rebase -i HEAD~2
+-ändrade den andra commiten till squash
+git rebase --continue
+
+git checkout -b feature3
+-la till resterande commands i fix2
+git add fix2.txt
+git commit -m "Update fix2"
+
+git checkout main
+git merge --no-ff feature3 -m "Merge feature3 and Update fix2"
