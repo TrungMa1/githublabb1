@@ -1,0 +1,49 @@
+git init
+git branch main
+git checkout main
+git status
+
+-skapade en fil (REAME.md) på intelliJ och skrev in duck, moose, cat
+
+git add README.md
+git commit -m "Initial commit"
+
+git branch feature1
+git checkout feature1
+
+-la till dog och bytte ut moose mot mouse
+git add README.md
+git commit -m "Added dog and moose to mouse"
+
+git checkout main
+-ändrade moose till mahmut
+git add README.md
+git commit -m "moose to mahmut"
+
+git merge feature1
+-ändrade i filen så det blev rätt enligt instruktioner
+git add README.md
+git commit -m "merge feature1"
+
+git tag extinct
+git reset --hard HEAD^
+
+git branch feature2
+-ändrade så varje ord börjar med en stor bokstav
+git add README.md
+git commit -m "Stor bokstav"
+
+git checkout feature2
+-skapade en fil som heter fix1.txt
+git add fix1.txt
+git commit -m "Add fix1"
+-skapade en fil som heter fix2.txt
+git add fix2.txt
+git commit -m "Add fix2"
+
+git checkout main
+git cherry-pick 60107eb7 = (fix2.txt)
+
+-la till all commands som har använts tills nu
+git add fix2.txt
+git commit -m "Add commands into fix2"
